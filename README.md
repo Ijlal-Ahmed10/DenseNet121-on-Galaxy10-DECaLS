@@ -71,7 +71,6 @@ Galaxy morphology classification plays a crucial role in astrophysics by helping
 - The repository includes:
     - Accuracy curves
     - Loss curves
-    - Experiment comparison plots
     - Detailed metrics for all experiments
 
 You can explore these results to analyze the influence of hyperparameters on model performance.
@@ -81,10 +80,8 @@ You can explore these results to analyze the influence of hyperparameters on mod
 A total of 16+ experiments were performed with variations including:
 - Different learning rates
 - Different optimizers
-- Different batch sizes
-- Training the full model vs. freezing backbone
-- Varying dropout rates
-- Adjusting augmentation intensity
+- Training the model on the full imbalanced dataset vs. undersampled balanced dataset
+- 20 epochs vs 40 epochs 
 
 Each experiment was logged and saved for reproducibility.
 
@@ -94,7 +91,6 @@ This project includes:
 - Training/validation accuracy & loss plots
 - Confusion matrices
 - Learning curves
-- Experiment comparison charts
 
 All visualizations can be found in the figures/ directory.
 
@@ -102,7 +98,7 @@ All visualizations can be found in the figures/ directory.
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/<username>/<repo-name>.git
+git clone https://github.com/Ijlal-Ahmed10/DenseNet121-on-Galaxy10-DECaLS.git
 ```
 
 2. Open the notebook in Jupyter or Kaggle.
